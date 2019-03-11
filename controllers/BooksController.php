@@ -22,7 +22,6 @@ class BooksController extends SubModelController
 
     public function actionCreate()
     {
-        //todo: Why dont work?
         $model = new Book();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
